@@ -1,6 +1,8 @@
 <template name="Home_Page">
   <div class="ui container">
-    <table style="margin: 20px" class="ui celled table">
+
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px" class="ui celled table">
       <thead>
       <tr>
         <th>First</th>
@@ -10,30 +12,23 @@
         <th>Email</th>
       </tr>
       </thead>
+
       <tbody>
+      {{#each contact in contactsList}}
       <tr>
-        <td>Chaselyn</td>
-        <td>Pugh</td>
-        <td>ABC Rainbow Drive</td>
-        <td>(123)456-7891</td>
-        <td>chaselynpugh@gmail.com</td>
+        <td>{{contact.first}}</td>
+        <td>{{contact.last}}</td>
+        <td>{{contact.address}}</td>
+        <td>{{contact.telephone}}</td>
+        <td>{{contact.email}}</td>
       </tr>
-      <tr>
-        <td>Robert</td>
-        <td>Davis</td>
-        <td>ABC Mountain Drive</td>
-        <td>(123)456-7891</td>
-        <td>RobertDavis@email.com</td>
-      </tr>
-      <tr>
-        <td>Sheri</td>
-        <td>Smith</td>
-        <td>ABC River Drive</td>
-        <td>(123)456-7891</td>
-        <td>sheri@email.com</td>
-      </tr>
+      {{/each}}
       </tbody>
     </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+
 
 
   </div>
