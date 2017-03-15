@@ -7,15 +7,18 @@
 }
 
 .Other {
-  background-color: grey;
+  background-color: #d6faff;
 }
 .School {
-  background-color: dimgrey;
+  background-color: #ddffef;
 }
 .Work {
-  background-color: darkgrey;
+  background-color: #f0ffe1;
 }
 
 .Friends {
-  background-color: lightslategrey;
+  background-color: #ffe4d1;
+}
+.Family {
+  background-color: #fff5db;
 }
