@@ -13,12 +13,14 @@ export const ContactsSchema = new SimpleSchema({
     label: 'first',
     type: String,
     optional: false,
+    unique: true,
     max: 200,
   },
   last: {
     label: 'last',
     type: String,
     optional: false,
+    unique: true,
     max: 200,
   },
   address: {
