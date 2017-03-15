@@ -8,3 +8,5 @@ import './edit-contact-page.js';
 import './home-page.html';
 import './home-page.js';
 
+import './tablesort.js';
+

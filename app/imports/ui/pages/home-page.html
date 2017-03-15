@@ -2,7 +2,7 @@
   <div class="ui container">
 
     {{#if Template.subscriptionsReady}}
-    <table style="margin-top: 20px" class="ui celled table">
+    <table style="margin-top: 20px" class="ui sortable sortable-table celled table">
       <thead>
       <tr>
         <th>First</th>
@@ -30,8 +30,6 @@
     {{else}}
     {{> Loading}}
     {{/if}}
-
-
 
   </div>
 </template>
