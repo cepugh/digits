@@ -8,7 +8,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 /* eslint-disable no-param-reassign */
 
 const displayErrorMessages = 'displayErrorMessages';
-
+export const groupList = ['School', 'Work', 'Family', 'Friends', 'Other'];
 
 Template.Edit_Contact_Page.onCreated(function onCreated() {
   this.subscribe('Contacts');
@@ -31,6 +31,9 @@ Template.Edit_Contact_Page.helpers({
     // See https://dweldon.silvrback.com/guards to understand '&&' in next line.
     return contactData && contactData[fieldName];
   },
+  groupChoice() {
+    return _.map(groupList, function makeGroupObject(group) { return { label: group }; });
+  },
 });
 
 Template.Edit_Contact_Page.events({
@@ -42,8 +45,9 @@ Template.Edit_Contact_Page.events({
     const address = event.target.Address.value;
     const telephone = event.target.Telephone.value;
     const email = event.target.Email.value;
+    const group = event.target.Group.value;
 
-    const editContactsData = { first, last, address, telephone, email };
+    const editContactsData = { first, last, address, telephone, email, group };
    
     // Clear out any old validation errors.
     instance.context.resetValidation();

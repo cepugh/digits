@@ -39,6 +39,12 @@ export const ContactsSchema = new SimpleSchema({
     optional: false,
     max: 200,
   },
+  group: {
+    label: 'group',
+    type: String,
+    optional: false,
+    defaultValue: 'Other',
+  },
 
 });
 
