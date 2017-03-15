@@ -6,6 +6,11 @@ Template.Home_Page.helpers({
   contactsList() {
     return Contacts.find();
   },
+  groupBackground(field, contact) {
+    const contactData = Contacts.findOne(contact);
+    return contactData[field];
+  },
+
 });
 
 Template.Home_Page.events({

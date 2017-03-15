@@ -13,6 +13,9 @@
             {{> Text_Form_Control label="Telephone" required=true errorMessage=(fieldError "telephone")}}
             {{> Text_Form_Control label="Email" required=true errorMessage=(fieldError "email")}}
           </div>
+          <div class="field">
+            {{> Select_Form_Control label="Group" required=true options=groupChoice errorMessage=(fieldError "group") }}
+          </div>
         </div>
       </div>
       <button class="ui button" type="submit">Submit</button>

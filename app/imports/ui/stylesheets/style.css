@@ -5,3 +5,17 @@
 #login-buttons a, .accounts-dialog a{
   color: rgba(255, 255, 255, 0.901961);
 }
+
+.Other {
+  background-color: grey;
+}
+.School {
+  background-color: dimgrey;
+}
+.Work {
+  background-color: darkgrey;
+}
+
+.Friends {
+  background-color: lightslategrey;
+}

@@ -12,6 +12,7 @@ const contactsSeeds = [
     address: '123 Rainbow Drive',
     telephone: '123-456-7890',
     email: 'abc@123.com',
+    group: 'Other',
   },
   {
     first: 'Bob',
@@ -19,6 +20,7 @@ const contactsSeeds = [
     address: '123 Rainbow Drive',
     telephone: '123-456-7890',
     email: 'abc@123.com',
+    group: 'Other',
   },
   {
     first: 'Boo',
@@ -26,6 +28,7 @@ const contactsSeeds = [
     address: '123 Rainbow Drive',
     telephone: '123-456-7890',
     email: 'abc@123.com',
+    group: 'Other',
   },
   {
     first: 'Berry',
@@ -33,6 +36,7 @@ const contactsSeeds = [
     address: '123 Rainbow Drive',
     telephone: '123-456-7890',
     email: 'abc@123.com',
+    group: 'Other',
   },
 ];
 

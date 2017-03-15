@@ -8,7 +8,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 /* eslint-disable no-param-reassign */
 
 const displayErrorMessages = 'displayErrorMessages';
-
+export const groupList = ['School', 'Work', 'Family', 'Friends', 'Other'];
 
 Template.Add_Contact_Page.onCreated(function onCreated() {
   this.messageFlags = new ReactiveDict();
@@ -25,6 +25,9 @@ Template.Add_Contact_Page.helpers({
     const errorObject = _.find(invalidKeys, (keyObj) => keyObj.name === fieldName);
     return errorObject && Template.instance().context.keyErrorMessage(errorObject.name);
   },
+  groupChoice() {
+    return _.map(groupList, function makeGroupObject(group) { return { label: group }; });
+  },
 });
 
 Template.Add_Contact_Page.events({
@@ -36,7 +39,13 @@ Template.Add_Contact_Page.events({
     const address = event.target.Address.value;
     const telephone = event.target.Telephone.value;
     const email = event.target.Email.value;
+<<<<<<< HEAD
     const newContactsData = { first, last, address, telephone, email };
+=======
+    const group = event.target.Group.value;
+
+    const newContactsData = { first, last, address, telephone, email, group };
+>>>>>>> user-groups
     // Clear out any old validation errors.
     instance.context.resetValidation();
     // Invoke clean so that newStudentData reflects what will be inserted.

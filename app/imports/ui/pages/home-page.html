@@ -10,18 +10,20 @@
         <th>Address</th>
         <th>Phone</th>
         <th>Email</th>
+        <th>Group</th>
         <th>Edit</th>
       </tr>
       </thead>
 
       <tbody>
       {{#each contact in contactsList}}
-      <tr>
+      <tr class="{{ groupBackground 'group' contact}}">
         <td>{{contact.first}}</td>
         <td>{{contact.last}}</td>
         <td>{{contact.address}}</td>
         <td>{{contact.telephone}}</td>
         <td>{{contact.email}}</td>
+        <td>{{contact.group}}</td>
         <td><a href="{{pathFor 'Edit_Contact_Page' _id=contact._id}}">Edit!</a></td>
       </tr>
       {{/each}}
