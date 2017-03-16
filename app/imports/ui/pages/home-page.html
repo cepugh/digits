@@ -18,7 +18,7 @@
       <tbody>
       {{#each contact in contactsList}}
       <tr class="{{ groupBackground 'group' contact}}">
-        <td>{{contact.first}}</td>
+        <td><i class="{{ starFavorite 'favorite' contact}}"></i>{{contact.first}}</td>
         <td>{{contact.last}}</td>
         <td>{{contact.address}}</td>
         <td>{{contact.telephone}}</td>

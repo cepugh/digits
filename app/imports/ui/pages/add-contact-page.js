@@ -40,8 +40,9 @@ Template.Add_Contact_Page.events({
     const telephone = event.target.Telephone.value;
     const email = event.target.Email.value;
     const group = event.target.Group.value;
+    const favorite = event.target.Favorite.checked;
 
-    const newContactsData = { first, last, address, telephone, email, group };
+    const newContactsData = { first, last, address, telephone, email, group, favorite };
 
     // Clear out any old validation errors.
     instance.context.resetValidation();
