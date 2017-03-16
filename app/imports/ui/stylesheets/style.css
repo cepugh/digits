@@ -1,5 +1,5 @@
 .ui.borderless.inverted.menu {
-  background-color: #D30829;
+  background-color: #311F29;
 }
 
 #login-buttons a, .accounts-dialog a{
@@ -7,18 +7,18 @@
 }
 
 .Other {
-  background-color: #d6faff;
+  background-color: #645473;
 }
 .School {
-  background-color: #ddffef;
+  background-color: #6F5E7E;
 }
 .Work {
-  background-color: #f0ffe1;
+  background-color: #857388;
 }
 
 .Friends {
-  background-color: #ffe4d1;
+  background-color: #AD8893;
 }
 .Family {
-  background-color: #fff5db;
+  background-color: #B18EA6;
 }

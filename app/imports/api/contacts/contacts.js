@@ -47,6 +47,10 @@ export const ContactsSchema = new SimpleSchema({
     optional: false,
     defaultValue: 'Other',
   },
+  favorite: {
+    label: 'favorite',
+    type: Boolean,
+  },
 
 });
 

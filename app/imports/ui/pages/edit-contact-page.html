@@ -19,6 +19,9 @@
             {{> Select_Form_Control label="Group" required=true options=groupChoice errorMessage=(fieldError "group") }}
           </div>
         </div>
+        <div class="field">
+          {{> Checkbox_Field label="Favorite" checked=false}}
+        </div>
       </div>
       <button class="ui button" type="submit">Update</button>
     </form>

@@ -13,6 +13,7 @@ const contactsSeeds = [
     telephone: '123-456-7890',
     email: 'abc@123.com',
     group: 'Other',
+    favorite: false,
   },
   {
     first: 'Bob',
@@ -21,6 +22,7 @@ const contactsSeeds = [
     telephone: '123-456-7890',
     email: 'abc@123.com',
     group: 'Other',
+    favorite: false,
   },
   {
     first: 'Boo',
@@ -29,6 +31,7 @@ const contactsSeeds = [
     telephone: '123-456-7890',
     email: 'abc@123.com',
     group: 'Other',
+    favorite: false,
   },
   {
     first: 'Berry',
@@ -37,6 +40,7 @@ const contactsSeeds = [
     telephone: '123-456-7890',
     email: 'abc@123.com',
     group: 'Other',
+    favorite: false,
   },
 ];
 
