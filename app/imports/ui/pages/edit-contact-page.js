@@ -64,8 +64,10 @@ Template.Edit_Contact_Page.events({
   },
   'click .delete'(event) {
     event.preventDefault();
-    Contacts.remove(FlowRouter.getParam('_id'));
-    FlowRouter.go('Home_Page');
+    if (confirm('Are you sure?')) {
+      Contacts.remove(FlowRouter.getParam('_id'));
+      FlowRouter.go('Home_Page');
+    }
   },
 
 });
